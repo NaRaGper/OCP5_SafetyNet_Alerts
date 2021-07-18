@@ -1,13 +1,19 @@
 package com.nathan.safetynetalerts.controller;
 
+import java.util.List;
+
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.nathan.safetynetalerts.model.Person;
 import com.nathan.safetynetalerts.service.PersonService;
 
 @RequestMapping ("/person")
@@ -18,8 +24,8 @@ public class PersonController {
 	PersonService personService;
 	
 	@GetMapping
-	public String getPerson() {
-		return personService.getPerson();
+	public List<Person> getPerson() {
+		return personService.getPersons();
 	}
 	
 	@PostMapping
@@ -33,7 +39,7 @@ public class PersonController {
 	}
 	
 	@DeleteMapping
-	public String deletePerson() {
-		return personService.deletePerson();
+	public void deletePerson(@Valid @RequestBody Person person) {
+		personService.deletePerson(person);
 	}
 }

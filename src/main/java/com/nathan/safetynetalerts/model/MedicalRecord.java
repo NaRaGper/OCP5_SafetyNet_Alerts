@@ -1,5 +1,8 @@
 package com.nathan.safetynetalerts.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.validation.constraints.NotNull;
 
 public class MedicalRecord {
@@ -10,8 +13,8 @@ public class MedicalRecord {
 	@NotNull
 	private String lastName;
 	private String birthdate;
-	private String medications;
-	private String allergies;
+	private List<String> medications = new ArrayList<>();
+	private List<String> allergies = new ArrayList<>();
 	
 	public MedicalRecord() {
 		
@@ -41,19 +44,19 @@ public class MedicalRecord {
 		this.birthdate = birthdate;
 	}
 
-	public String getMedications() {
+	public List<String> getMedications() {
 		return medications;
 	}
 
-	public void setMedications(String medications) {
+	public void setMedications(ArrayList<String> medications) {
 		this.medications = medications;
 	}
 
-	public String getAllergies() {
+	public List<String> getAllergies() {
 		return allergies;
 	}
 
-	public void setAllergies(String allergies) {
+	public void setAllergies(ArrayList<String> allergies) {
 		this.allergies = allergies;
 	}
 	
