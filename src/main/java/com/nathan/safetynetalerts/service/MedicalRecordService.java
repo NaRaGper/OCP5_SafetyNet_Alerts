@@ -1,23 +1,32 @@
 package com.nathan.safetynetalerts.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.nathan.safetynetalerts.model.MedicalRecord;
+import com.nathan.safetynetalerts.repository.MedicalRecordRepository;
 
 @Service
 public class MedicalRecordService {
 	
-	public String getMedicalRecord() {
-		return "Get working";
+	@Autowired
+	MedicalRecordRepository medicalRecordRepository;
+	
+	public List<MedicalRecord> getMedicalRecords() {
+		return medicalRecordRepository.getMedicalRecords();
 	}
 
-	public String postMedicalRecord() {
-		return "Post working";
+	public void postMedicalRecord(MedicalRecord medicalRecord) {
+		medicalRecordRepository.postMedicalRecord(medicalRecord);
 	}
 
-	public String putMedicalRecord() {
-		return "Put Working";
+	public void putMedicalRecord(MedicalRecord medicalRecord) {
+		medicalRecordRepository.putMedicalRecord(medicalRecord);
 	}
 
-	public String deleteMedicalRecord() {
-		return "Delete working";
+	public void deleteMedicalRecord(MedicalRecord medicalRecord) {
+		medicalRecordRepository.deleteMedicalRecord(medicalRecord);
 	}
 }

@@ -6,7 +6,7 @@ public class Firestation {
 	
 	@NotNull
 	private String address;
-	private String station;
+	private int station;
 	
 	public Firestation() {
 		
@@ -20,11 +20,11 @@ public class Firestation {
 		this.address = address;
 	}
 
-	public String getStation() {
+	public int getStation() {
 		return station;
 	}
 
-	public void setStation(String station) {
+	public void setStation(int station) {
 		this.station = station;
 	}
 	

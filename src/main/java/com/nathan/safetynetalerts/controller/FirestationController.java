@@ -1,13 +1,19 @@
 package com.nathan.safetynetalerts.controller;
 
+import java.util.List;
+
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.nathan.safetynetalerts.model.Firestation;
 import com.nathan.safetynetalerts.service.FirestationService;
 
 @RequestMapping ("/firestation")
@@ -18,22 +24,22 @@ public class FirestationController {
 	FirestationService firestationService;
 	
 	@GetMapping
-	public String getFirestation() {
-		return firestationService.getFirestation();
+	public List<Firestation> getFirestations() {
+		return firestationService.getFirestations();
 	}
 	
 	@PostMapping
-	public String postFirestation() {
-		return firestationService.postFirestation();
+	public void postFirestation(@Valid @RequestBody Firestation firestation) {
+		firestationService.postFirestation(firestation);
 	}
 	
 	@PutMapping
-	public String putFirestation() {
-		return firestationService.putFirestation();
+	public void putFirestation(@Valid @RequestBody Firestation firestation) {
+		firestationService.putFirestation(firestation);
 	}
 	
 	@DeleteMapping
-	public String deleteFirestation() {
-		return firestationService.deleteFirestation();
+	public void deleteFirestation(@Valid @RequestBody Firestation firestation) {
+		firestationService.deleteFirestation(firestation);
 	}
 }

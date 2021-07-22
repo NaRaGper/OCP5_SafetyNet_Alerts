@@ -2,8 +2,6 @@ package com.nathan.safetynetalerts.service;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,15 +15,15 @@ public class PersonService {
 	PersonRepository personRepository;
 	
 	public List<Person> getPersons() {
-		return personRepository.getAllPersons();
+		return personRepository.getPersons();
 	}
 
-	public String postPerson() {
-		return "Post working";
+	public Person postPerson(Person person) {
+		return personRepository.postPerson(person);
 	}
 
-	public String putPerson() {
-		return "Put Working";
+	public Person putPerson(Person person) {
+		return personRepository.putPerson(person);
 	}
 
 	public void deletePerson(Person person) {

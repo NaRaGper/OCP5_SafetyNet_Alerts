@@ -1,24 +1,33 @@
 package com.nathan.safetynetalerts.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.nathan.safetynetalerts.model.Firestation;
+import com.nathan.safetynetalerts.repository.FirestationRepository;
 
 @Service
 public class FirestationService {
+	
+	@Autowired
+	FirestationRepository firestationRepository;
 
-	public String getFirestation() {
-		return "Get working";
+	public List<Firestation> getFirestations() {
+		return firestationRepository.getFirestations();
 	}
 
-	public String postFirestation() {
-		return "Post working";
+	public void postFirestation(Firestation firestation) {
+		firestationRepository.postFirestation(firestation);
 	}
 
-	public String putFirestation() {
-		return "Put Working";
+	public void putFirestation(Firestation firestation) {
+		firestationRepository.putFirestation(firestation);
 	}
 
-	public String deleteFirestation() {
-		return "Delete working";
+	public void deleteFirestation(Firestation firestation) {
+		firestationRepository.deleteFirestation(firestation);
 	}
 
 }
