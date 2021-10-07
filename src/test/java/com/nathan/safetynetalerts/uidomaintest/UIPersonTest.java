@@ -1,51 +1,63 @@
-package com.nathan.safetynetalerts;
+package com.nathan.safetynetalerts.uidomaintest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
 import com.nathan.safetynetalerts.uidomain.UIPerson;
 
 public class UIPersonTest {
-	
+
 	private static UIPerson uiPerson = new UIPerson();
-	
-	@SuppressWarnings("unused")
-	private static UIPerson uiPerson2 = new UIPerson("First", "Last", "01 Test Address", "000-111-2222");
-	
+
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String phone;
+
+	@Test
+	public void constructor() {
+		try {
+			new UIPerson(firstName, lastName, address, phone);
+		} catch (Exception e) {
+			fail(e.getMessage());
+		}
+	}
+
 	@Test
 	public void setUIPersonFirstName() {
-		String firstName = "First";
-		
+		firstName = "First";
+
 		uiPerson.setFirstName(firstName);
-		
+
 		assertEquals(firstName, uiPerson.getFirstName());
 	}
 
 	@Test
 	public void setUIPersonLastName() {
-		String lastName = "Last";
-		
+		lastName = "Last";
+
 		uiPerson.setLastName(lastName);
-		
+
 		assertEquals(lastName, uiPerson.getLastName());
 	}
 
 	@Test
 	public void setUIPersonAddress() {
-		String address = "01 Test Address";
-		
+		address = "01 Test Address";
+
 		uiPerson.setAddress(address);
-		
+
 		assertEquals(address, uiPerson.getAddress());
 	}
 
 	@Test
 	public void setUIPersonPhone() {
-		String phone = "000-111-2222";
-		
+		phone = "000-111-2222";
+
 		uiPerson.setPhone(phone);
-		
+
 		assertEquals(phone, uiPerson.getPhone());
 	}
 }

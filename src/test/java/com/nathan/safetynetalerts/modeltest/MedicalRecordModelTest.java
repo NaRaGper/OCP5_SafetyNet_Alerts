@@ -1,4 +1,4 @@
-package com.nathan.safetynetalerts;
+package com.nathan.safetynetalerts.modeltest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

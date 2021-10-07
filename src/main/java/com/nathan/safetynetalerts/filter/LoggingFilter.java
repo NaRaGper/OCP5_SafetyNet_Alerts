@@ -1,7 +1,6 @@
 package com.nathan.safetynetalerts.filter;
 
 import java.io.IOException;
-import java.net.http.HttpResponse;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -26,7 +25,7 @@ public class LoggingFilter implements Filter {
 
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
 		logRequest(httpRequest);
-
+		
 		chain.doFilter(request, response);
 
 		HttpServletResponse httpResponse = (HttpServletResponse) response;
@@ -34,14 +33,13 @@ public class LoggingFilter implements Filter {
 	}
 
 	private void logRequest(HttpServletRequest httpRequest) {
-		log.trace("URL : " + httpRequest.getRequestURL() 
-		+ ", Method : " + httpRequest.getMethod());
-		//pas de getParameters disponible
+		log.info("URL : " + httpRequest.getRequestURL() 
+				+ ", Method : " + httpRequest.getMethod());
+		//log.info("Parameter : " + httpRequest.getParameter(httpRequest.getParameterNames().nextElement()));
 	}
 
 	private void logResponse(HttpServletResponse httpResponse) {
-		log.trace("Status : " + httpResponse.getStatus());
-		//pas de getBody disponible
+		log.info("Status : " + httpResponse.getStatus());
 	}
 }
 

@@ -1,610 +1,173 @@
-2021-08-19 01:34:28,929 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
-2021-08-19 01:34:28,958 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:34:28,960 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:34:28,961 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:34:28,992 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-19 01:34:28,993 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-19 01:34:29,905 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:34:29,922 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:34:29,923 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:34:29,923 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:34:29,986 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:34:29,986 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 992 ms
-2021-08-19 01:34:30,391 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:34:30,397 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:34:30,414 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:34:30,431 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:34:30,441 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 1.743 seconds (JVM running for 2.453)
-2021-08-19 01:34:37,071 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-19 01:34:37,071 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2021-08-19 01:34:37,073 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
-2021-08-19 01:34:37,078 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-1] URL : http://localhost:8080/flood/stations, Method : GET
-2021-08-19 01:34:37,131 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-1] Status : 200
-2021-08-19 01:36:33,293 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:36:33,294 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:36:33,294 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:36:33,528 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:36:33,529 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:36:33,529 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:36:33,530 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:36:33,541 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:36:33,542 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 245 ms
-2021-08-19 01:36:33,635 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:36:33,638 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:36:33,644 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:36:33,646 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:36:33,650 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.393 seconds (JVM running for 125.662)
-2021-08-19 01:36:33,661 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:36:40,233 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:36:40,234 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:36:40,234 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:36:40,455 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:36:40,456 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:36:40,457 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:36:40,457 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:36:40,476 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:36:40,476 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 239 ms
-2021-08-19 01:36:40,571 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:36:40,573 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:36:40,579 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:36:40,580 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:36:40,585 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.386 seconds (JVM running for 132.597)
-2021-08-19 01:36:40,594 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:36:41,282 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-19 01:36:41,282 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-08-19 01:36:41,283 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
-2021-08-19 01:36:41,283 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] URL : http://localhost:8080/flood/stations, Method : GET
-2021-08-19 01:36:41,290 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] Status : 200
-2021-08-19 01:36:59,312 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-3] URL : http://localhost:8080/flood/stations, Method : GET
-2021-08-19 01:36:59,316 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-3] Status : 200
-2021-08-19 01:37:37,222 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:37:37,223 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:37:37,223 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:37:37,399 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:37:37,399 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:37:37,400 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:37:37,400 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:37:37,413 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:37:37,413 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 188 ms
-2021-08-19 01:37:37,489 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:37:37,491 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:37:37,496 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:37:37,498 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:37:37,502 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.307 seconds (JVM running for 189.514)
-2021-08-19 01:37:37,511 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:37:50,221 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:37:50,221 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:37:50,221 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:37:50,377 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:37:50,378 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:37:50,378 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:37:50,378 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:37:50,391 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:37:50,391 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 168 ms
-2021-08-19 01:37:50,453 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:37:50,455 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:37:50,459 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:37:50,461 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:37:50,464 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.268 seconds (JVM running for 202.477)
-2021-08-19 01:37:50,472 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:39:04,320 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:39:04,321 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:39:04,321 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:39:04,476 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:39:04,477 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:39:04,477 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:39:04,477 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:39:04,493 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:39:04,494 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 170 ms
-2021-08-19 01:39:04,555 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:39:04,557 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:39:04,560 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:39:04,562 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:39:04,565 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.268 seconds (JVM running for 276.577)
-2021-08-19 01:39:04,574 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:39:49,953 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:39:49,953 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:39:49,954 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:39:50,104 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:39:50,104 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:39:50,105 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:39:50,105 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:39:50,115 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:39:50,115 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 160 ms
-2021-08-19 01:39:50,175 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:39:50,176 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:39:50,179 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:39:50,182 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:39:50,184 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.254 seconds (JVM running for 322.197)
-2021-08-19 01:39:50,191 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:39:53,901 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-19 01:39:53,901 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-08-19 01:39:53,901 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
-2021-08-19 01:39:53,902 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] URL : http://localhost:8080/flood/stations, Method : GET
-2021-08-19 01:39:53,908 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] Status : 200
-2021-08-19 01:44:40,609 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:44:40,609 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:44:40,610 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:44:40,750 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:44:40,751 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:44:40,751 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:44:40,751 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:44:40,761 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:44:40,761 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 150 ms
-2021-08-19 01:44:40,817 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:44:40,819 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:44:40,822 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:44:40,825 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:44:40,829 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.241 seconds (JVM running for 612.841)
-2021-08-19 01:44:40,835 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:47:08,185 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:47:08,186 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:47:08,186 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:47:08,320 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:47:08,321 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:47:08,321 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:47:08,321 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:47:08,334 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:47:08,334 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 147 ms
-2021-08-19 01:47:08,394 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:47:08,396 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:47:08,398 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:47:08,401 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:47:08,403 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.24 seconds (JVM running for 760.416)
-2021-08-19 01:47:08,410 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:47:52,775 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:47:52,776 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:47:52,776 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:47:52,917 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:47:52,917 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:47:52,918 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:47:52,918 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:47:52,929 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:47:52,929 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 152 ms
-2021-08-19 01:47:52,983 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:47:52,984 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:47:52,987 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:47:52,991 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:47:52,993 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.24 seconds (JVM running for 805.006)
-2021-08-19 01:47:53,000 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:48:18,992 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:48:18,992 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:48:18,993 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:48:19,133 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:48:19,134 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:48:19,134 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:48:19,134 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:48:19,145 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:48:19,145 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 151 ms
-2021-08-19 01:48:19,201 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:48:19,202 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:48:19,205 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:48:19,207 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:48:19,210 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.235 seconds (JVM running for 831.222)
-2021-08-19 01:48:19,216 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:49:20,856 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:49:20,856 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:49:20,856 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:49:20,984 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:49:20,985 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:49:20,985 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:49:20,985 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:49:20,999 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:49:20,999 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 142 ms
-2021-08-19 01:49:21,048 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:49:21,049 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:49:21,053 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:49:21,055 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:49:21,058 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.218 seconds (JVM running for 893.069)
-2021-08-19 01:49:21,064 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:49:59,303 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:49:59,305 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:49:59,305 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:49:59,425 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:49:59,425 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:49:59,426 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:49:59,426 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:49:59,438 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:49:59,439 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 134 ms
-2021-08-19 01:49:59,490 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:49:59,492 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:49:59,495 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:49:59,497 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:49:59,499 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.211 seconds (JVM running for 931.511)
-2021-08-19 01:49:59,505 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:51:00,155 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:51:00,155 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:51:00,155 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:51:00,282 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:51:00,282 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:51:00,282 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:51:00,283 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:51:00,297 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:51:00,297 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 141 ms
-2021-08-19 01:51:00,361 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:51:00,363 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:51:00,366 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:51:00,368 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:51:00,371 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.233 seconds (JVM running for 992.383)
-2021-08-19 01:51:00,377 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:51:47,782 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:51:47,782 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:51:47,782 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:51:47,909 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:51:47,909 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:51:47,909 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:51:47,910 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:51:47,923 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:51:47,923 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 140 ms
-2021-08-19 01:51:47,982 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:51:47,983 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:51:47,986 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:51:47,988 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:51:47,991 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.232 seconds (JVM running for 1040.002)
-2021-08-19 01:51:47,996 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:52:36,486 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:52:36,487 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:52:36,487 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:52:36,622 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:52:36,622 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:52:36,622 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:52:36,622 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:52:36,633 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:52:36,634 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 145 ms
-2021-08-19 01:52:36,709 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:52:36,712 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:52:36,715 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:52:36,717 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:52:36,720 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.255 seconds (JVM running for 1088.732)
-2021-08-19 01:52:36,727 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:54:57,051 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:54:57,051 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:54:57,051 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:54:57,164 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:54:57,165 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:54:57,165 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:54:57,165 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:54:57,177 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:54:57,177 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 125 ms
-2021-08-19 01:54:57,231 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:54:57,233 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:54:57,236 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:54:57,237 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:54:57,240 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.206 seconds (JVM running for 1229.251)
-2021-08-19 01:54:57,245 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:56:09,192 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:56:09,192 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:56:09,192 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:56:09,304 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:56:09,304 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:56:09,305 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:56:09,305 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:56:09,317 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:56:09,317 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 124 ms
-2021-08-19 01:56:09,366 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:56:09,367 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:56:09,370 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:56:09,372 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:56:09,374 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.199 seconds (JVM running for 1301.386)
-2021-08-19 01:56:09,380 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:57:05,007 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:57:05,008 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:57:05,008 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:57:05,115 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:57:05,116 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:57:05,116 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:57:05,116 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:57:05,129 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:57:05,129 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 121 ms
-2021-08-19 01:57:05,182 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:57:05,183 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:57:05,185 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:57:05,188 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:57:05,190 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.199 seconds (JVM running for 1357.202)
-2021-08-19 01:57:05,196 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:57:14,838 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:57:14,838 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:57:14,838 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:57:14,960 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:57:14,961 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:57:14,961 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:57:14,961 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:57:14,971 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:57:14,971 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 132 ms
-2021-08-19 01:57:15,027 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:57:15,028 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:57:15,031 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:57:15,033 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:57:15,035 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.217 seconds (JVM running for 1367.047)
-2021-08-19 01:57:15,041 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:57:18,572 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 01:57:18,572 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 01:57:18,573 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 01:57:18,672 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 01:57:18,673 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:57:18,673 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 01:57:18,673 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 01:57:18,686 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 01:57:18,686 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 113 ms
-2021-08-19 01:57:18,732 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 01:57:18,734 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 01:57:18,736 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 01:57:18,738 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 01:57:18,741 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.184 seconds (JVM running for 1370.753)
-2021-08-19 01:57:18,746 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 01:59:27,703 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-19 01:59:27,703 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-08-19 01:59:27,704 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
-2021-08-19 01:59:27,704 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] URL : http://localhost:8080/personInfo, Method : GET
-2021-08-19 01:59:27,708 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] Status : 200
-2021-08-19 01:59:32,494 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-3] URL : http://localhost:8080/personInfo, Method : GET
-2021-08-19 01:59:32,496 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-3] Status : 200
-2021-08-19 01:59:34,421 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-4] URL : http://localhost:8080/personInfo, Method : GET
-2021-08-19 01:59:34,423 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-4] Status : 200
-2021-08-19 02:03:41,092 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:03:41,092 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:03:41,092 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:03:41,200 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:03:41,201 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:03:41,201 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:03:41,201 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:03:41,211 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:03:41,211 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 118 ms
-2021-08-19 02:03:41,265 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:03:41,267 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:03:41,269 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:03:41,271 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:03:41,274 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.2 seconds (JVM running for 1753.286)
-2021-08-19 02:03:41,279 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:04:53,347 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:04:53,348 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:04:53,348 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:04:53,456 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:04:53,457 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:04:53,457 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:04:53,457 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:04:53,469 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:04:53,469 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 120 ms
-2021-08-19 02:04:53,519 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:04:53,520 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:04:53,523 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:04:53,525 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:04:53,528 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.196 seconds (JVM running for 1825.539)
-2021-08-19 02:04:53,534 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:05:32,781 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:05:32,782 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:05:32,782 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:05:32,886 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:05:32,886 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:05:32,887 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:05:32,887 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:05:32,897 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:05:32,897 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 115 ms
-2021-08-19 02:05:32,947 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:05:32,948 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:05:32,952 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:05:32,954 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:05:32,957 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.191 seconds (JVM running for 1864.969)
-2021-08-19 02:05:32,966 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:05:37,523 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:05:37,523 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:05:37,523 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:05:37,626 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:05:37,626 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:05:37,626 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:05:37,626 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:05:37,635 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:05:37,635 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 111 ms
-2021-08-19 02:05:37,682 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:05:37,684 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:05:37,687 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:05:37,690 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:05:37,692 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.184 seconds (JVM running for 1869.704)
-2021-08-19 02:05:37,697 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:07:41,719 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:07:41,719 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:07:41,719 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:07:41,829 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:07:41,829 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:07:41,829 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:07:41,829 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:07:41,841 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:07:41,841 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 121 ms
-2021-08-19 02:07:41,889 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:07:41,890 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:07:41,893 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:07:41,895 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:07:41,898 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.193 seconds (JVM running for 1993.909)
-2021-08-19 02:07:41,903 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:07:47,088 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-19 02:07:47,088 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-08-19 02:07:47,089 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
-2021-08-19 02:07:47,089 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] URL : http://localhost:8080/personInfo, Method : GET
-2021-08-19 02:07:47,094 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] Status : 200
-2021-08-19 02:09:47,169 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-5] URL : http://localhost:8080/personInfo, Method : GET
-2021-08-19 02:09:47,171 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-5] Status : 200
-2021-08-19 02:10:59,559 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:10:59,559 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:10:59,559 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:10:59,664 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:10:59,665 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:10:59,665 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:10:59,665 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:10:59,677 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:10:59,677 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 117 ms
-2021-08-19 02:10:59,726 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:10:59,727 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:10:59,730 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:10:59,732 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:10:59,736 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.192 seconds (JVM running for 2191.747)
-2021-08-19 02:10:59,745 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:11:12,437 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:11:12,437 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:11:12,437 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:11:12,533 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:11:12,533 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:11:12,534 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:11:12,534 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:11:12,544 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:11:12,544 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 106 ms
-2021-08-19 02:11:12,583 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:11:12,584 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:11:12,591 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:11:12,593 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:11:12,597 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.178 seconds (JVM running for 2204.609)
-2021-08-19 02:11:12,604 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:12:06,050 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:12:06,051 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:12:06,051 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:12:06,149 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:12:06,150 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:12:06,150 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:12:06,150 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:12:06,159 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:12:06,159 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 107 ms
-2021-08-19 02:12:06,205 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:12:06,206 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:12:06,210 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:12:06,212 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:12:06,215 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.18 seconds (JVM running for 2258.227)
-2021-08-19 02:12:06,222 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:12:08,734 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:12:08,734 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:12:08,734 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:12:08,836 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:12:08,836 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:12:08,836 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:12:08,836 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:12:08,845 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:12:08,846 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 110 ms
-2021-08-19 02:12:08,891 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:12:08,892 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:12:08,895 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:12:08,897 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:12:08,899 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.179 seconds (JVM running for 2260.911)
-2021-08-19 02:12:08,904 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:13:23,842 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:13:23,842 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:13:23,842 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:13:23,952 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:13:23,952 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:13:23,952 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:13:23,952 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:13:23,964 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:13:23,964 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 121 ms
-2021-08-19 02:13:24,018 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:13:24,019 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:13:24,023 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:13:24,025 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:13:24,027 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.202 seconds (JVM running for 2336.039)
-2021-08-19 02:13:24,035 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:18:16,292 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:18:16,292 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:18:16,292 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:18:16,396 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:18:16,396 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:18:16,397 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:18:16,397 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:18:16,407 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:18:16,408 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 114 ms
-2021-08-19 02:18:16,449 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:18:16,450 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:18:16,455 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:18:16,457 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:18:16,459 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.184 seconds (JVM running for 2628.471)
-2021-08-19 02:18:16,465 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:20:58,157 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:20:58,157 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:20:58,157 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:20:58,262 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:20:58,262 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:20:58,262 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:20:58,262 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:20:58,273 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:20:58,273 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 115 ms
-2021-08-19 02:20:58,314 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:20:58,315 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:20:58,317 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:20:58,322 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:20:58,324 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.184 seconds (JVM running for 2790.336)
-2021-08-19 02:20:58,329 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:21:39,648 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:21:39,648 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:21:39,648 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:21:39,744 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:21:39,745 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:21:39,745 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:21:39,745 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:21:39,755 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:21:39,755 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 106 ms
-2021-08-19 02:21:39,795 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:21:39,796 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:21:39,803 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:21:39,805 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:21:39,807 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.175 seconds (JVM running for 2831.819)
-2021-08-19 02:21:39,812 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:21:48,436 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:21:48,437 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:21:48,437 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:21:48,547 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:21:48,548 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:21:48,548 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:21:48,548 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:21:48,562 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:21:48,562 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 124 ms
-2021-08-19 02:21:48,602 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:21:48,604 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:21:48,610 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:21:48,611 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:21:48,614 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.193 seconds (JVM running for 2840.625)
-2021-08-19 02:21:48,619 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:21:50,039 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-19 02:21:50,039 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
-2021-08-19 02:21:50,040 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
-2021-08-19 02:21:50,040 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] URL : http://localhost:8080/personInfo, Method : GET
-2021-08-19 02:21:50,047 TRACE c.n.s.f.LoggingFilter [http-nio-8080-exec-2] Status : 200
-2021-08-19 02:24:25,860 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:24:25,861 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:24:25,861 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:24:25,963 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:24:25,963 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:24:25,964 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:24:25,964 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:24:25,973 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:24:25,973 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 111 ms
-2021-08-19 02:24:26,013 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:24:26,014 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:24:26,016 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:24:26,018 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:24:26,022 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.177 seconds (JVM running for 2998.034)
-2021-08-19 02:24:26,028 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:24:45,892 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:24:45,892 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:24:45,892 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:24:45,998 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:24:45,998 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:24:45,998 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:24:45,998 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:24:46,008 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:24:46,008 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 115 ms
-2021-08-19 02:24:46,046 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:24:46,047 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:24:46,050 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:24:46,055 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:24:46,058 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.185 seconds (JVM running for 3018.07)
-2021-08-19 02:24:46,065 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
-2021-08-19 02:25:22,246 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SafetynetalertsApplication using Java 15.0.2 on DESKTOP-VK58OBN with PID 520 (S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts\target\classes started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
-2021-08-19 02:25:22,246 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.2, Spring v5.3.8
-2021-08-19 02:25:22,246 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-08-19 02:25:22,350 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2021-08-19 02:25:22,350 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:25:22,350 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-08-19 02:25:22,351 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-08-19 02:25:22,360 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-08-19 02:25:22,360 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 113 ms
-2021-08-19 02:25:22,401 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-08-19 02:25:22,402 INFO o.s.b.a.e.w.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
-2021-08-19 02:25:22,405 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2021-08-19 02:25:22,406 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-19 02:25:22,409 INFO o.s.b.StartupInfoLogger [restartedMain] Started SafetynetalertsApplication in 0.179 seconds (JVM running for 3054.421)
-2021-08-19 02:25:22,414 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-10-07 11:03:02,370 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.controllertest.FirestationControllerTest], using SpringBootContextLoader
+2021-10-07 11:03:02,379 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.controllertest.FirestationControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:02,380 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.controllertest.FirestationControllerTest]: FirestationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:02,528 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.controllertest.FirestationControllerTest
+2021-10-07 11:03:02,531 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:02,544 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@192b76a4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d96a895, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@309b8144, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70c99e13, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@321558f8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a9f8c2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@662b199, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a678e40, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@222dc36c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3445ddf2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27b84c9a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@21abd3a3, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d514259]
+2021-10-07 11:03:03,071 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-10-07 11:03:03,111 INFO o.s.b.StartupInfoLogger [main] Starting FirestationControllerTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:03,114 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:03,116 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:05,045 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-10-07 11:03:05,045 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2021-10-07 11:03:05,046 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2021-10-07 11:03:05,072 INFO o.s.b.StartupInfoLogger [main] Started FirestationControllerTest in 2.261 seconds (JVM running for 3.944)
+2021-10-07 11:03:05,203 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : GET
+2021-10-07 11:03:05,251 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,279 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : PUT
+2021-10-07 11:03:05,378 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,384 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : PUT
+2021-10-07 11:03:05,387 INFO c.n.s.f.LoggingFilter [main] Status : 404
+2021-10-07 11:03:05,393 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation/list, Method : GET
+2021-10-07 11:03:05,397 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,403 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : DELETE
+2021-10-07 11:03:05,404 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,410 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : POST
+2021-10-07 11:03:05,412 INFO c.n.s.f.LoggingFilter [main] Status : 406
+2021-10-07 11:03:05,417 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : POST
+2021-10-07 11:03:05,419 INFO c.n.s.f.LoggingFilter [main] Status : 201
+2021-10-07 11:03:05,425 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/firestation, Method : DELETE
+2021-10-07 11:03:05,426 INFO c.n.s.f.LoggingFilter [main] Status : 404
+2021-10-07 11:03:05,433 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.controllertest.MedicalRecordControllerTest], using SpringBootContextLoader
+2021-10-07 11:03:05,434 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.controllertest.MedicalRecordControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:05,434 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.controllertest.MedicalRecordControllerTest]: MedicalRecordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:05,437 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.controllertest.MedicalRecordControllerTest
+2021-10-07 11:03:05,438 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:05,440 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71b03690, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@175e5e41, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2475c695, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dfbc62, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@702b0e5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1562ea4d, org.springframework.test.context.event.EventPublishingTestExecutionListener@1fa9c71a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62684421, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4a99e7c5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@48ab4c59, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@19ebd341, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3982d511, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c20ba2b]
+2021-10-07 11:03:05,465 INFO o.s.b.StartupInfoLogger [main] Starting MedicalRecordControllerTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:05,466 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:05,467 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:05,778 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-10-07 11:03:05,778 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2021-10-07 11:03:05,779 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2021-10-07 11:03:05,789 INFO o.s.b.StartupInfoLogger [main] Started MedicalRecordControllerTest in 0.346 seconds (JVM running for 4.66)
+2021-10-07 11:03:05,797 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : PUT
+2021-10-07 11:03:05,808 INFO c.n.s.f.LoggingFilter [main] Status : 404
+2021-10-07 11:03:05,814 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : POST
+2021-10-07 11:03:05,815 INFO c.n.s.f.LoggingFilter [main] Status : 406
+2021-10-07 11:03:05,821 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : POST
+2021-10-07 11:03:05,823 INFO c.n.s.f.LoggingFilter [main] Status : 201
+2021-10-07 11:03:05,828 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : DELETE
+2021-10-07 11:03:05,830 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,835 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : PUT
+2021-10-07 11:03:05,836 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,841 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : GET
+2021-10-07 11:03:05,842 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:05,846 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/medicalRecord, Method : DELETE
+2021-10-07 11:03:05,848 INFO c.n.s.f.LoggingFilter [main] Status : 404
+2021-10-07 11:03:05,852 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.controllertest.PersonControllerTest], using SpringBootContextLoader
+2021-10-07 11:03:05,853 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.controllertest.PersonControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:05,853 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.controllertest.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:05,855 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.controllertest.PersonControllerTest
+2021-10-07 11:03:05,856 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:05,857 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65606149, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4210168, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1dd4941a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@63b93fba, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53570ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@9930b22, org.springframework.test.context.event.EventPublishingTestExecutionListener@30de3a4e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a309700, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@34ae2cf3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@25f5eb5f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6438a9e5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7aaeaaf5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3fa2c8e7]
+2021-10-07 11:03:05,874 INFO o.s.b.StartupInfoLogger [main] Starting PersonControllerTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:05,875 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:05,877 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:06,176 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-10-07 11:03:06,176 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2021-10-07 11:03:06,177 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2021-10-07 11:03:06,187 INFO o.s.b.StartupInfoLogger [main] Started PersonControllerTest in 0.328 seconds (JVM running for 5.059)
+2021-10-07 11:03:06,195 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : DELETE
+2021-10-07 11:03:06,216 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,221 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : PUT
+2021-10-07 11:03:06,223 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,229 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : GET
+2021-10-07 11:03:06,230 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,235 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : DELETE
+2021-10-07 11:03:06,238 INFO c.n.s.f.LoggingFilter [main] Status : 404
+2021-10-07 11:03:06,243 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : POST
+2021-10-07 11:03:06,245 INFO c.n.s.f.LoggingFilter [main] Status : 406
+2021-10-07 11:03:06,250 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : PUT
+2021-10-07 11:03:06,252 INFO c.n.s.f.LoggingFilter [main] Status : 404
+2021-10-07 11:03:06,258 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/person, Method : POST
+2021-10-07 11:03:06,259 INFO c.n.s.f.LoggingFilter [main] Status : 201
+2021-10-07 11:03:06,263 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.controllertest.SafetyNetAlertsControllerTest], using SpringBootContextLoader
+2021-10-07 11:03:06,263 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.controllertest.SafetyNetAlertsControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:06,263 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.controllertest.SafetyNetAlertsControllerTest]: SafetyNetAlertsControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:06,266 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.controllertest.SafetyNetAlertsControllerTest
+2021-10-07 11:03:06,267 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:06,268 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f6d5b3a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55858007, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2129f48b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6683d6fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d2e59c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a2ec859, org.springframework.test.context.event.EventPublishingTestExecutionListener@14cdf63b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c81ee61, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@786b0868, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@748b7b3c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f0c27b8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c1d22de, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4c954f7d]
+2021-10-07 11:03:06,288 INFO o.s.b.StartupInfoLogger [main] Starting SafetyNetAlertsControllerTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:06,289 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:06,290 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:06,573 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2021-10-07 11:03:06,573 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2021-10-07 11:03:06,574 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2021-10-07 11:03:06,583 INFO o.s.b.StartupInfoLogger [main] Started SafetyNetAlertsControllerTest in 0.313 seconds (JVM running for 5.454)
+2021-10-07 11:03:06,589 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/personInfo, Method : GET
+2021-10-07 11:03:06,593 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,604 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/flood/stations, Method : GET
+2021-10-07 11:03:06,611 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,617 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/fire, Method : GET
+2021-10-07 11:03:06,620 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,625 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/phoneAlert, Method : GET
+2021-10-07 11:03:06,627 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,634 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/personInfo, Method : GET
+2021-10-07 11:03:06,638 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,643 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/childAlert, Method : GET
+2021-10-07 11:03:06,645 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,650 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/communityEmail, Method : GET
+2021-10-07 11:03:06,653 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,659 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/childAlert, Method : GET
+2021-10-07 11:03:06,663 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,668 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/personInfo, Method : GET
+2021-10-07 11:03:06,670 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,674 INFO c.n.s.f.LoggingFilter [main] URL : http://localhost/phoneAlert, Method : GET
+2021-10-07 11:03:06,675 INFO c.n.s.f.LoggingFilter [main] Status : 200
+2021-10-07 11:03:06,689 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.repositorytest.FirestationRepositoryTest], using SpringBootContextLoader
+2021-10-07 11:03:06,689 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.repositorytest.FirestationRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:06,690 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.repositorytest.FirestationRepositoryTest]: FirestationRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:06,694 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.repositorytest.FirestationRepositoryTest
+2021-10-07 11:03:06,698 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:06,698 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39288297, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b574164, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@201cb411, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2a04d13d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@57c5c2d0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5618f52d, org.springframework.test.context.event.EventPublishingTestExecutionListener@13616fc3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1f60d9ab, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66ca5bd5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@776a6bbc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6f6d1de5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@76592c22, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@42f9c5cf]
+2021-10-07 11:03:06,715 INFO o.s.b.StartupInfoLogger [main] Starting FirestationRepositoryTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:06,716 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:06,716 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:07,646 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-10-07 11:03:07,676 INFO o.s.b.StartupInfoLogger [main] Started FirestationRepositoryTest in 0.976 seconds (JVM running for 6.548)
+2021-10-07 11:03:07,779 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.repositorytest.PersonRepositoryTest], using SpringBootContextLoader
+2021-10-07 11:03:07,780 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.repositorytest.PersonRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:07,780 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.repositorytest.PersonRepositoryTest]: PersonRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:07,782 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.repositorytest.PersonRepositoryTest
+2021-10-07 11:03:07,784 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:07,785 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38e0a6e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12919391, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@504e8986, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6de8bacf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ec60066, org.springframework.test.context.support.DirtiesContextTestExecutionListener@551534, org.springframework.test.context.event.EventPublishingTestExecutionListener@24f3be01, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@c654692, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@228ea248, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@a5aff98, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@33e05b64, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1517da5c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@425cb654]
+2021-10-07 11:03:07,823 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.SafetynetalertsApplicationTests], using SpringBootContextLoader
+2021-10-07 11:03:07,823 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.SafetynetalertsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:07,824 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.SafetynetalertsApplicationTests]: SafetynetalertsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:07,828 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.SafetynetalertsApplicationTests
+2021-10-07 11:03:07,829 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:07,830 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1145f542, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f8f0cdf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@77f960ea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@22a91ba, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3c7b9b58, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b8591fc, org.springframework.test.context.event.EventPublishingTestExecutionListener@17c74a56, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4136ae55, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@21f75c70, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@267a23c3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@bc258a0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7f720b8b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@64fdccc9]
+2021-10-07 11:03:07,834 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.servicetest.FirestationServiceTest], using SpringBootContextLoader
+2021-10-07 11:03:07,835 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.servicetest.FirestationServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:07,835 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.servicetest.FirestationServiceTest]: FirestationServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:07,840 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.servicetest.FirestationServiceTest
+2021-10-07 11:03:07,841 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:07,842 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12f2afbf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5dfd5087, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3152b357, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f057b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@757dd98, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3099dc9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@147519d2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6cf9b2fa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@557b09e0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2bf85ae6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@17ff6dc2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@36b073a5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3b89589a]
+2021-10-07 11:03:07,863 INFO o.s.b.StartupInfoLogger [main] Starting FirestationServiceTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:07,864 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:07,865 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:08,430 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-10-07 11:03:08,459 INFO o.s.b.StartupInfoLogger [main] Started FirestationServiceTest in 0.615 seconds (JVM running for 7.33)
+2021-10-07 11:03:08,492 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.servicetest.MedicalRecordServiceTest], using SpringBootContextLoader
+2021-10-07 11:03:08,493 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.servicetest.MedicalRecordServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:08,493 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.servicetest.MedicalRecordServiceTest]: MedicalRecordServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:08,494 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.servicetest.MedicalRecordServiceTest
+2021-10-07 11:03:08,496 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:08,497 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ab76053, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1fbc1391, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@306f1408, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@67bb6e00, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@563f3f5c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@29609e91, org.springframework.test.context.event.EventPublishingTestExecutionListener@616710e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5d90b9a3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@727aa892, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f43245a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6fac74b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5e7f2b96, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@79e626f3]
+2021-10-07 11:03:08,513 INFO o.s.b.StartupInfoLogger [main] Starting MedicalRecordServiceTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:08,513 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:08,514 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:08,997 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-10-07 11:03:09,017 INFO o.s.b.StartupInfoLogger [main] Started MedicalRecordServiceTest in 0.519 seconds (JVM running for 7.889)
+2021-10-07 11:03:09,050 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nathan.safetynetalerts.servicetest.PersonServiceTest], using SpringBootContextLoader
+2021-10-07 11:03:09,050 INFO o.s.t.c.s.AbstractContextLoader [main] Could not detect default resource locations for test class [com.nathan.safetynetalerts.servicetest.PersonServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-07 11:03:09,050 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.nathan.safetynetalerts.servicetest.PersonServiceTest]: PersonServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-07 11:03:09,051 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.nathan.safetynetalerts.SafetynetalertsApplication for test class com.nathan.safetynetalerts.servicetest.PersonServiceTest
+2021-10-07 11:03:09,053 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-07 11:03:09,054 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2bd9a603, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d8d581c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3e9b038, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@164b00d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67ebf79c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10d11ec5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ef71497, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7ab7339c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@42587c41, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a6775f9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c52918e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7fba7e4b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7e01bf89]
+2021-10-07 11:03:09,069 INFO o.s.b.StartupInfoLogger [main] Starting PersonServiceTest using Java 1.8.0_292 on DESKTOP-VK58OBN with PID 6764 (started by Shinigames_i in S:\Shinigames_i\Formation Java\OCP5NG\safetynetalerts)
+2021-10-07 11:03:09,069 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-10-07 11:03:09,070 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-10-07 11:03:09,610 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-10-07 11:03:09,634 INFO o.s.b.StartupInfoLogger [main] Started PersonServiceTest in 0.578 seconds (JVM running for 8.505)

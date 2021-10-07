@@ -106,21 +106,25 @@ public class SafetyNetAlertsController {
 				.collect(Collectors.toList());
 		List<PersonInfoPerson> persons = sameLastName.stream().filter(p -> p.getFirstName().equalsIgnoreCase(firstName))
 				.collect(Collectors.toList());
-
-		personInformations.setPerson(persons.get(0));
-		sameLastName.removeAll(sameLastName.stream().filter(p -> p.getFirstName().equalsIgnoreCase(firstName))
-				.collect(Collectors.toList()));
-		personInformations.setSameLastName(sameLastName);
+		if (persons.isEmpty()) {
+			return new ResponseEntity<>("Cette personne n'existe pas", HttpStatus.OK);
+		}
+		if (!sameLastName.isEmpty()) {
+			sameLastName.remove(persons.get(0));
+			personInformations.setSameLastName(sameLastName);
+		} 
+		if (sameLastName.isEmpty()) {
+			return new ResponseEntity<>(persons.get(0), HttpStatus.OK);
+		} else {
+			personInformations.setPerson(persons.get(0));
+		}
 		return new ResponseEntity<>(personInformations, HttpStatus.OK);
 	}
 
 	@GetMapping("/communityEmail")
 	public ResponseEntity<Object> getCommunityEmail(@RequestParam String city) {
-		List<Person> persons = personService.getPersonsFromCity(city).stream().collect(Collectors.toList());
-		Set<String> emails = new TreeSet<>();
-		for (Person person : persons) {
-			emails.add(person.getEmail());
-		}
+		Set<String> emails = personService.getPersonsFromCity(city).stream().map(p -> p.getEmail())
+				.collect(Collectors.toSet());
 		return new ResponseEntity<>(emails, HttpStatus.OK);
 	}
 }
