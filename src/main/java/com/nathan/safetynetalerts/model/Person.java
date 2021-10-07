@@ -12,7 +12,7 @@ public class Person {
 	private String lastName;
 	private String address;
 	private String city;
-	private int zip;
+	private String zip;
 	private String phone;
 
 	@Email
@@ -22,7 +22,7 @@ public class Person {
 	public Person() {
 	
 	}
-
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -55,11 +55,11 @@ public class Person {
 		this.city = city;
 	}
 
-	public int getZip() {
+	public String getZip() {
 		return zip;
 	}
 
-	public void setZip(int zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 

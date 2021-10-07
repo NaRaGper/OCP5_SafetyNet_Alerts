@@ -26,7 +26,19 @@ public class PersonService {
 		return personRepository.putPerson(person);
 	}
 
-	public void deletePerson(Person person) {
-		personRepository.deletePerson(person);
+	public Person deletePerson(Person person) {
+		return personRepository.deletePerson(person);
+	}
+
+	public List<Person> getPersonsFromAddresses(List<String> addresses) {
+		return personRepository.getPersonsFromAddresses(addresses);
+	}
+	
+	public List<Person> getPersonsFromAddress(String address) {
+		return personRepository.getPersonsFromAddress(address);
+	}
+
+	public List<Person> getPersonsFromCity(String city) {
+		return personRepository.getPersonsFromCity(city);
 	}
 }

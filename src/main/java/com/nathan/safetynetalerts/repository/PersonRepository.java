@@ -1,5 +1,6 @@
 package com.nathan.safetynetalerts.repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,10 +18,11 @@ public class PersonRepository {
 
 	public Person postPerson(Person personToPost) {
 
-		boolean alreadyExists = getPersons().stream().anyMatch((person) -> person.getFirstName().equalsIgnoreCase(personToPost.getFirstName()) &&
-				person.getLastName().equalsIgnoreCase(personToPost.getLastName()));
+		boolean alreadyExists = getPersons().stream()
+				.anyMatch((person) -> person.getFirstName().equalsIgnoreCase(personToPost.getFirstName())
+						&& person.getLastName().equalsIgnoreCase(personToPost.getLastName()));
 
-		if (alreadyExists == false) { 
+		if (alreadyExists == false) {
 			getPersons().add(personToPost);
 			return personToPost;
 		}
@@ -29,30 +31,56 @@ public class PersonRepository {
 
 	public Person putPerson(Person personToPut) {
 
-		List<Person> existingPerson = getPersons().stream().filter((person) -> person.getFirstName().equalsIgnoreCase(personToPut.getFirstName()) &&
-				person.getLastName().equalsIgnoreCase(personToPut.getLastName())).collect(Collectors.toList());
+		List<Person> existingPerson = getPersons().stream()
+				.filter((person) -> person.getFirstName().equalsIgnoreCase(personToPut.getFirstName())
+						&& person.getLastName().equalsIgnoreCase(personToPut.getLastName()))
+				.collect(Collectors.toList());
 
 		if (existingPerson.isEmpty() || existingPerson.size() >= 2) {
 			return null;
-		}
-		else {
+		} else {
 			getPersons().remove(existingPerson.get(0));
 			getPersons().add(personToPut);
 			return personToPut;
 		}
 	}
 
-	public void deletePerson(Person personToDelete) {
+	public Person deletePerson(Person personToDelete) {
 
-		List<Person> persons = getPersons();
+		List<Person> existingPerson = getPersons().stream()
+				.filter((person) -> person.getFirstName().equalsIgnoreCase(personToDelete.getFirstName())
+						&& person.getLastName().equalsIgnoreCase(personToDelete.getLastName()))
+				.collect(Collectors.toList());
 
-		for (Person person : persons) {
-			if (person.getFirstName().equalsIgnoreCase(personToDelete.getFirstName()) &&
-					person.getLastName().equalsIgnoreCase(personToDelete.getLastName())) 
-			{
-				persons.remove(person);
-				break;
-			}
+		if (existingPerson.isEmpty() || existingPerson.size() >= 2) {
+			return null;
+		} else {
+			getPersons().remove(existingPerson.get(0));
+			return personToDelete;
 		}
+	}
+
+	public List<Person> getPersonsFromAddresses(List<String> addresses) {
+		List<Person> persons = new ArrayList<>();
+		for (String address : addresses) {
+			persons.addAll(getPersons().stream().filter(person -> person.getAddress().equalsIgnoreCase(address))
+					.collect(Collectors.toList()));
+		}
+		return persons;
+	}
+
+	public List<Person> getPersonsFromAddress(String address) {
+		List<Person> persons = new ArrayList<>();
+		persons.addAll(getPersons().stream().filter(person -> person.getAddress().equalsIgnoreCase(address))
+				.collect(Collectors.toList()));
+		return persons;
+	}
+
+	public List<Person> getPersonsFromCity(String city) {
+		List<Person> persons = new ArrayList<>();
+		persons.addAll(getPersons().stream()
+				.filter(p -> p.getCity().equalsIgnoreCase(city))
+				.collect(Collectors.toList()));
+		return persons;
 	}
 }

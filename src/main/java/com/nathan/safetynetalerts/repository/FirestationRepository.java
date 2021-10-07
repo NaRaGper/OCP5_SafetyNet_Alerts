@@ -1,6 +1,9 @@
 package com.nathan.safetynetalerts.repository;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Repository;
 
@@ -15,49 +18,71 @@ public class FirestationRepository {
 		return Database.getInstance().getData().getFirestations();
 	}
 
-	public void postFirestation(Firestation firestationToPost) {
+	public Firestation postFirestation(Firestation firestationToPost) {
 
-		List<Firestation> firestations = getFirestations();
-		boolean alreadyExists = false;
+		boolean alreadyExists = getFirestations().stream()
+				.anyMatch((firestation) -> firestation.getAddress().equalsIgnoreCase(firestationToPost.getAddress()));
 
-		for (Firestation firestation : firestations) {
-			if (firestation.getAddress().equalsIgnoreCase(firestationToPost.getAddress())) {
-
-				alreadyExists = true;
-				break;
-			}
+		if (alreadyExists == false) {
+			getFirestations().add(firestationToPost);
+			return firestationToPost;
 		}
-
-		if (alreadyExists == false) { 
-			firestations.add(firestationToPost); 
-		}
-
+		return null;
 	}
 
-	public void putFirestation(Firestation firestationToPut) {
+	public Firestation putFirestation(Firestation firestationToPut) {
 
-		List<Firestation> firestations = getFirestations();
+		List<Firestation> existingFirestation = getFirestations().stream()
+				.filter((firestation) -> firestation.getAddress().equalsIgnoreCase(firestationToPut.getAddress()))
+				.collect(Collectors.toList());
 
-		for (Firestation firestation : firestations) {
-			if (firestation.getAddress().equalsIgnoreCase(firestationToPut.getAddress())) {
-
-				firestations.remove(firestation);
-				firestations.add(firestationToPut);
-				break;
-			}
+		if (existingFirestation.isEmpty() || existingFirestation.size() >= 2) {
+			return null;
+		} else {
+			getFirestations().remove(existingFirestation.get(0));
+			getFirestations().add(firestationToPut);
+			return firestationToPut;
 		}
 	}
 
-	public void deleteFirestation(Firestation firestationToDelete) {
+	public Firestation deleteFirestation(Firestation firestationToDelete) {
 
-		List<Firestation> firestations = getFirestations();
+		List<Firestation> existingFirestation = getFirestations().stream()
+				.filter(firestation -> firestation.getAddress().equalsIgnoreCase(firestationToDelete.getAddress()))
+				.collect(Collectors.toList());
 
-		for (Firestation firestation : firestations) {
-			if (firestation.getAddress().equalsIgnoreCase(firestationToDelete.getAddress())) {
-
-				firestations.remove(firestation);
-				break;
-			}
+		if (existingFirestation.isEmpty() || existingFirestation.size() >= 2) {
+			return null;
+		} else {
+			getFirestations().remove(existingFirestation.get(0));
+			return firestationToDelete;
 		}
+	}
+
+	public List<String> getAddressesFromStationNumber(int stationNumber) {
+		return getFirestations().stream().filter(firestation -> firestation.getStation() == stationNumber)
+				.map(firestation -> firestation.getAddress()).collect(Collectors.toList());
+	}
+
+	public List<String> getAddressesFromStationNumbers(List<Integer> stationNumbers) {
+//		List<Firestation> firestations = new ArrayList<>();
+		List<String> addresses = new ArrayList<>();
+		for (int stationNumber : stationNumbers) {
+			addresses.addAll(getFirestations().stream()
+				.filter(f -> f.getStation() == stationNumber)
+				.map(f -> f.getAddress())
+				.collect(Collectors.toList()));
+		}
+//		for (Firestation firestation : firestations) {
+//			addresses.add(firestation.getAddress());
+//		}
+		return addresses;
+	}
+	
+	public int getStationNumberFromAddress(String address) {
+		List<Integer> stationNumbers = getFirestations().stream().filter(f -> f.getAddress().equalsIgnoreCase(address))
+				.map(f -> f.getStation())
+				.collect(Collectors.toList());
+		return stationNumbers.get(0);
 	}
 }

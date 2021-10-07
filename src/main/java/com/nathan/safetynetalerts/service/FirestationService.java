@@ -18,16 +18,27 @@ public class FirestationService {
 		return firestationRepository.getFirestations();
 	}
 
-	public void postFirestation(Firestation firestation) {
-		firestationRepository.postFirestation(firestation);
+	public Firestation postFirestation(Firestation firestation) {
+		return firestationRepository.postFirestation(firestation);
 	}
 
-	public void putFirestation(Firestation firestation) {
-		firestationRepository.putFirestation(firestation);
+	public Firestation putFirestation(Firestation firestation) {
+		return firestationRepository.putFirestation(firestation);
 	}
 
-	public void deleteFirestation(Firestation firestation) {
-		firestationRepository.deleteFirestation(firestation);
+	public Firestation deleteFirestation(Firestation firestation) {
+		return firestationRepository.deleteFirestation(firestation);
 	}
-
+	
+	public List<String> getAddressesFromStationNumber(int stationNumber) {
+		return firestationRepository.getAddressesFromStationNumber(stationNumber);
+	}
+	
+	public List<String> getAddressesFromStationNumbers(List<Integer> stationNumbers) {
+		return firestationRepository.getAddressesFromStationNumbers(stationNumbers);
+	}
+	
+	public int getStationNumberFromAddress(String address) {
+		return firestationRepository.getStationNumberFromAddress(address);
+	}
 }
