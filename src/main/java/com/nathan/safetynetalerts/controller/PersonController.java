@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,19 +17,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
 import com.nathan.safetynetalerts.error.RequestError;
 import com.nathan.safetynetalerts.model.Person;
-import com.nathan.safetynetalerts.service.PersonService;
+import com.nathan.safetynetalerts.service.IPersonService;
 
 @RequestMapping ("/person")
 @RestController
 public class PersonController {
 
 	@Autowired
-	PersonService personService;
+	IPersonService personService;
 
 	Logger logger = LogManager.getLogger(PersonController.class);
 

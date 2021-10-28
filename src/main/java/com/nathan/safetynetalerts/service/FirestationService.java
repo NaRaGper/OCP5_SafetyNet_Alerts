@@ -9,7 +9,7 @@ import com.nathan.safetynetalerts.model.Firestation;
 import com.nathan.safetynetalerts.repository.FirestationRepository;
 
 @Service
-public class FirestationService {
+public class FirestationService implements IFirestationService {
 	
 	@Autowired
 	FirestationRepository firestationRepository;

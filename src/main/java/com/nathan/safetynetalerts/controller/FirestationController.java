@@ -20,24 +20,24 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nathan.safetynetalerts.error.RequestError;
 import com.nathan.safetynetalerts.model.Firestation;
 import com.nathan.safetynetalerts.model.Person;
-import com.nathan.safetynetalerts.service.FirestationService;
-import com.nathan.safetynetalerts.service.MedicalRecordService;
-import com.nathan.safetynetalerts.service.PersonService;
-import com.nathan.safetynetalerts.uidomain.UIPersonFromAddress;
+import com.nathan.safetynetalerts.service.IFirestationService;
+import com.nathan.safetynetalerts.service.IMedicalRecordService;
+import com.nathan.safetynetalerts.service.IPersonService;
 import com.nathan.safetynetalerts.uidomain.UIPerson;
+import com.nathan.safetynetalerts.uidomain.UIPersonFromAddress;
 
 @RequestMapping ("/firestation")
 @RestController
 public class FirestationController {
 
 	@Autowired
-	FirestationService firestationService;
+	IFirestationService firestationService;
 
 	@Autowired
-	PersonService personService;
+	IPersonService personService;
 
 	@Autowired
-	MedicalRecordService medicalRecordService;
+	IMedicalRecordService medicalRecordService;
 
 	@GetMapping ("/list")
 	public List<Firestation> getFirestations() {

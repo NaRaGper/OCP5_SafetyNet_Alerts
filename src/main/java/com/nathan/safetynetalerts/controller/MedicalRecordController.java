@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nathan.safetynetalerts.error.RequestError;
 import com.nathan.safetynetalerts.model.MedicalRecord;
-import com.nathan.safetynetalerts.service.MedicalRecordService;
+import com.nathan.safetynetalerts.service.IMedicalRecordService;
 
 @RequestMapping ("/medicalRecord")
 @RestController
 public class MedicalRecordController {
 
 	@Autowired	
-	MedicalRecordService medicalRecordService;
+	IMedicalRecordService medicalRecordService;
 
 	@GetMapping
 	public List<MedicalRecord> getMedicalRecords() {

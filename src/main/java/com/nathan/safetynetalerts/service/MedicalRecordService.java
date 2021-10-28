@@ -10,7 +10,7 @@ import com.nathan.safetynetalerts.model.Person;
 import com.nathan.safetynetalerts.repository.MedicalRecordRepository;
 
 @Service
-public class MedicalRecordService {
+public class MedicalRecordService implements IMedicalRecordService {
 
 	@Autowired
 	MedicalRecordRepository medicalRecordRepository;

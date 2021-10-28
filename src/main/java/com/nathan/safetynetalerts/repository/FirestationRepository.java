@@ -13,15 +13,12 @@ import com.nathan.safetynetalerts.model.Firestation;
 public class FirestationRepository {
 
 	public List<Firestation> getFirestations() {
-
 		return Database.getInstance().getData().getFirestations();
 	}
 
 	public Firestation postFirestation(Firestation firestationToPost) {
-
 		boolean alreadyExists = getFirestations().stream()
 				.anyMatch((firestation) -> firestation.getAddress().equalsIgnoreCase(firestationToPost.getAddress()));
-
 		if (alreadyExists == false) {
 			getFirestations().add(firestationToPost);
 			return firestationToPost;
@@ -30,11 +27,7 @@ public class FirestationRepository {
 	}
 
 	public Firestation putFirestation(Firestation firestationToPut) {
-
-		List<Firestation> existingFirestation = getFirestations().stream()
-				.filter((firestation) -> firestation.getAddress().equalsIgnoreCase(firestationToPut.getAddress()))
-				.collect(Collectors.toList());
-
+		List<Firestation> existingFirestation = existingFirestation(firestationToPut);
 		if (existingFirestation.isEmpty() || existingFirestation.size() >= 2) {
 			return null;
 		} else {
@@ -45,11 +38,7 @@ public class FirestationRepository {
 	}
 
 	public Firestation deleteFirestation(Firestation firestationToDelete) {
-
-		List<Firestation> existingFirestation = getFirestations().stream()
-				.filter(firestation -> firestation.getAddress().equalsIgnoreCase(firestationToDelete.getAddress()))
-				.collect(Collectors.toList());
-
+		List<Firestation> existingFirestation = existingFirestation(firestationToDelete);
 		if (existingFirestation.isEmpty() || existingFirestation.size() >= 2) {
 			return null;
 		} else {
@@ -79,5 +68,12 @@ public class FirestationRepository {
 				.map(f -> f.getStation())
 				.collect(Collectors.toList());
 		return stationNumbers.get(0);
+	}
+	
+	private List<Firestation> existingFirestation(Firestation firestationToSearch) {
+		List<Firestation> existingFirestation = getFirestations().stream()
+				.filter(firestation -> firestation.getAddress().equalsIgnoreCase(firestationToSearch.getAddress()))
+				.collect(Collectors.toList());
+		return existingFirestation;
 	}
 }

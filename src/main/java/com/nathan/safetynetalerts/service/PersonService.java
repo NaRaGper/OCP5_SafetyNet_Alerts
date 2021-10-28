@@ -9,7 +9,7 @@ import com.nathan.safetynetalerts.model.Person;
 import com.nathan.safetynetalerts.repository.PersonRepository;
 
 @Service
-public class PersonService {
+public class PersonService implements IPersonService {
 
 	@Autowired
 	PersonRepository personRepository;
